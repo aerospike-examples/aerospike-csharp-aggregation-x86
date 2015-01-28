@@ -1,7 +1,7 @@
 # Overview
 Simple app written in C# VS 2013 to specifically showcase that both `AerospikeClient.dll` built for **x86 (32-bit)** target and external application referencing the `.dll` can sucessfully run aggregations on top of the Aerospike DB. 
 
-This is how Aerospike C# Client was built for x86 (32-bit) platform:
+This is how Aerospike C# Client was built for x86 (32-bit) platform to be used with this app:
 
 - Downloaded it from [here](http://www.aerospike.com/download/client/csharp/3.0.12/)
 - Opened **AerospikeClient.sln** in Visual Studio 2013
