@@ -13,9 +13,7 @@ This is how Aerospike C# Client was built for **x86 (32-bit)** platform to be us
     + Platform target: **x86**
 - Ran `Build` > `Build Solution` &mdash; this generated `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder
 
-Then, in this (ASConsoleApp) app, reference to the generated `AerospikeClient.dll` was added via `Project` > `Add Reference...`
-
-***Imp To Note:*** This repo contains source code for the referencing application (ASConsoleApp) which already has a reference to `AerospikeClient.dll` built for x86 (32-bit) as described above.
+***Imp To Note:*** This repo contains source code for the referencing application (ASConsoleApp) which already has a reference to `AerospikeClient.dll` built for x86 (32-bit) target as described above. In this application, reference to the generated `AerospikeClient.dll` was added via `Project` > `Add Reference...`
 
 # Aggregation In Action 
 
