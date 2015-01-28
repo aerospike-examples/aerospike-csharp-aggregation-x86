@@ -15,7 +15,7 @@ Simple app written in C# VS 2013 to specifically showcase that both `AerospikeCl
 
 # Aggregation In Action 
 
-Follow these steps to run this application and see aggregation running on x86 (32-bit) target.
+Follow these steps to run this application and see [aggregation](/ASConsoleApp/udf/aggregationByRegion.lua) running on x86 (32-bit) target.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ Follow these steps to run this application and see aggregation running on x86 (3
 - Download, clone or fork this repo -- basicially get the code one way or another :)
 - Open **ASConsoleApp.sln** in VS 2013
 - Add reference to generated `AerospikeClient.dll` located in `<local-client-download-folder>\bin\x86\Release` folder via `Project` > `Add Reference...`
-- In [**Program.cs**](https://github.com/aerospike/aerospike-csharp-aggregation-x86/blob/master/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
+- In [**Program.cs**](/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
 - `Build` and `Start` the application
 
 If all goes well, you should message **"INFO: Connection to Aerospike cluster succeeded!"** along with a menu of options. See Usage.
@@ -38,7 +38,7 @@ If all goes well, you should message **"INFO: Connection to Aerospike cluster su
   - Create 10,000 dummy user records with randomly selected ***region*** ('n', 'e', 'w', 's') and a ***tweetcount*** of up to 20. NOTE: You should definitely do this the first time you run the app.
 - Second option:
   - Create `secondary index` on ***tweetcount*** 
-  - Register streaming UDF [`aggregationByRegion`](https://github.com/aerospike/aerospike-csharp-aggregation-x86/blob/master/ASConsoleApp/udf/aggregationByRegion.lua)
+  - Register streaming UDF [`aggregationByRegion`](/ASConsoleApp/udf/aggregationByRegion.lua)
   - Execute range query on ***tweetcount***
   - Run aggregation on the range query resultset 
   - Output aggregation result to the console
