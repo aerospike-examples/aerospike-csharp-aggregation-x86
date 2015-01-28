@@ -3,8 +3,6 @@ Simple app written in C# VS 2013 to specifically showcase that both `AerospikeCl
 
 ## Build Aerospike C# Client
 
-This is how you should build Aerospike C# Client for **x86 (32-bit)** platform to be used with this app:
-
 - Download it from [here](http://www.aerospike.com/download/client/csharp/3.0.12/)
 - Open **AerospikeClient.sln** in Visual Studio 2013
 - Change the following settings via `Project` > `AerospikeClient Properties`
@@ -13,11 +11,11 @@ This is how you should build Aerospike C# Client for **x86 (32-bit)** platform t
     + Platform target: **x86**
 - Run `Build` > `Build Solution` &mdash; this should generate `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder
 
-***Keep Note Of:*** `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder
+**Keep note of** `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder
 
 # Aggregation In Action 
 
-Follow these steps to run this application and see aggregation runnning on x86 (32-bit) target.
+Follow these steps to run this application and see aggregation running on x86 (32-bit) target.
 
 ## Prerequisites
 
@@ -30,9 +28,9 @@ Follow these steps to run this application and see aggregation runnning on x86 (
 - Open **ASConsoleApp.sln** in VS 2013
 - Add reference to generated `AerospikeClient.dll` located in `<local-client-download-folder>\bin\x86\Release` folder via `Project` > `Add Reference...`
 - In [**Program.cs**](https://github.com/aerospike/aerospike-csharp-aggregation-x86/blob/master/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
-- Build and Start the application
+- `Build` and `Start` the application
 
-If all goes well, you should message **"INFO: Connection to Aerospike cluster succeeded!"** along with a menu presenting couple of options. See Usage.
+If all goes well, you should message **"INFO: Connection to Aerospike cluster succeeded!"** along with a menu of options. See Usage.
 
 ## Usage
 
