@@ -1,5 +1,5 @@
 # Overview
-Simple app written in C# VS 2013 that targets x86 (32-bit) platform to specifically showcase that both `AerospikeClient.dll` built for x86 (32-bit) target and external application referencing the `.dll` can sucessfully run aggregations on top of the Aerospike DB. 
+Simple app written in C# VS 2013 to specifically showcase that both `AerospikeClient.dll` built for x86 (32-bit) target and external application referencing the `.dll` can sucessfully run aggregations on top of the Aerospike DB. 
 
 This is how Aerospike C# Client was built for x86 (32-bit) platform:
 
@@ -26,7 +26,7 @@ Then, in this (ASConsoleApp) app, reference to the generated `AerospikeClient.dl
 
 - Download, clone or fork this repo -- bascially get the code one way or another :)
 - Open **ASConsoleApp.sln** in VS 2013
-- In **Program.cs**, update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
+- In [**Program.cs**](https://github.com/aerospike/aerospike-csharp-aggregation-x86/blob/master/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
 - Build and Start the application
 
 If all goes well, you should message **"INFO: Connection to Aerospike cluster succeeded!"** along with a menu presenting couple of options. See Usage.
@@ -37,10 +37,10 @@ If all goes well, you should message **"INFO: Connection to Aerospike cluster su
   - Create 10,000 dummy user records with randomly selected ***region*** ('n', 'e', 'w', 's') and a ***tweetcount*** of up to 20. NOTE: You should definitely do this the first time you run the app.
 - Second option:
   - Create `secondary index` on ***tweetcount*** 
-  -  Register streaming UDF `aggregationByRegion`
-  -  Execute range query on ***tweetcount***
-  -  Run aggregation on the range query resultset 
-  -  Output aggregation result
+  - Register streaming UDF [`aggregationByRegion`](https://github.com/aerospike/aerospike-csharp-aggregation-x86/blob/master/ASConsoleApp/udf/aggregationByRegion.lua)
+  - Execute range query on ***tweetcount***
+  - Run aggregation on the range query resultset 
+  - Output aggregation result to the console
   
 ## Takeaway
 
