@@ -30,7 +30,7 @@ Follow these steps to run this application and see [aggregation](/ASConsoleApp/u
 - In [**Program.cs**](/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
 - `Build` and `Start` the application
 
-If all goes well, you should message **"INFO: Connection to Aerospike cluster succeeded!"** along with a menu of options. See Usage.
+If all goes well, you should message **"INFO: Connection to Aerospike cluster succeeded!"** along with a menu of options in the console. See Usage.
 
 ## Usage
 
