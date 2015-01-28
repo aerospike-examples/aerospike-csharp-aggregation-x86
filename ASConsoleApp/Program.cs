@@ -20,7 +20,7 @@ namespace ASConsoleApp
                 // Connecting to Aerospike cluster
 
                 // Specify Aerospike server IP of one of the nodes in the cluster
-                string asServerIP = "172.16.159.135";
+                string asServerIP = "127.0.0.0";
                 // Specity Port that the node is listening on
                 int asServerPort = 3000;
                 // Establish connection
@@ -118,13 +118,10 @@ namespace ASConsoleApp
                 RegisterTask rt = client.Register(null, path, filename, Language.LUA);
                 rt.Wait();
 
-                string[] bins = { "tweetCount", "region" };
-                string bin = "tweetCount";
                 Statement stmt = new Statement();
                 stmt.SetNamespace("test");
                 stmt.SetSetName("testusers");
                 stmt.SetIndexName("tweetcountindex");
-                stmt.SetBinNames(bin);
                 stmt.SetFilters(Filter.Range("tweetCount", min, max));
 
                 rs = client.QueryAggregate(null, stmt, "aggregationByRegion", "sum");
