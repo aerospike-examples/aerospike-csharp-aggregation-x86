@@ -11,7 +11,7 @@ Simple app written in C# VS 2013 to specifically showcase that both `AerospikeCl
     + Platform target: **x86**
 - Run `Build` > `Build Solution` &mdash; this should generate `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder
 
-**Keep note of** `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder
+**Keep note of** `AerospikeClient.dll` in `<local-client-download-folder>\bin\x86\Release` folder.
 
 # Aggregation In Action 
 
