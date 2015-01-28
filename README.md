@@ -34,9 +34,9 @@ If all goes well, you should message **"INFO: Connection to Aerospike cluster su
 
 ## Usage
 
-- First option:
+- First menu option &mdash; selecting 1 will:
   - Create 10,000 dummy user records with randomly selected ***region*** ('n', 'e', 'w', 's') and a ***tweetcount*** of up to 20. NOTE: You should definitely do this the first time you run the app.
-- Second option:
+- Second menu option &mdash; selecting 2 will:
   - Create `secondary index` on ***tweetcount*** 
   - Register streaming UDF [`aggregationByRegion`](/ASConsoleApp/udf/aggregationByRegion.lua)
   - Execute range query on ***tweetcount***
