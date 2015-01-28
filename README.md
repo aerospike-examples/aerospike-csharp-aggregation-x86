@@ -1,6 +1,8 @@
 # Overview
 Simple app written in C# VS 2013 to specifically showcase that both `AerospikeClient.dll` built for **x86 (32-bit)** target and external application referencing the `.dll` can sucessfully run aggregations on top of the Aerospike DB. 
 
+## FYI
+
 This is how Aerospike C# Client was built for **x86 (32-bit)** platform to be used with this app:
 
 - Downloaded it from [here](http://www.aerospike.com/download/client/csharp/3.0.12/)
@@ -13,9 +15,11 @@ This is how Aerospike C# Client was built for **x86 (32-bit)** platform to be us
 
 Then, in this (ASConsoleApp) app, reference to the generated `AerospikeClient.dll` was added via `Project` > `Add Reference...`
 
-***Imp To Note:*** This repo contains source code for the referencing application (ASConsoleApp) which already has a reference to `AerospikeClient.dll` built for x86 (32-bit).
+***Imp To Note:*** This repo contains source code for the referencing application (ASConsoleApp) which already has a reference to `AerospikeClient.dll` built for x86 (32-bit) as described above.
 
 # Aggregation In Action 
+
+Follow these steps to run this application and see aggregation runnning on x86 (32-bit) target.
 
 ## Prerequisites
 
@@ -46,3 +50,4 @@ If all goes well, you should message **"INFO: Connection to Aerospike cluster su
 
 Anything is possible :)
 
+![Check This Out](/ASConsoleApp/app_console.png?raw=true)
