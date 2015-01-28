@@ -24,7 +24,7 @@ Then, in this (ASConsoleApp) app, reference to the generated `AerospikeClient.dl
 
 ## Build
 
-- Download, clone or fork this repo -- bascially get the code one way or another :)
+- Download, clone or fork this repo -- basicially get the code one way or another :)
 - Open **ASConsoleApp.sln** in VS 2013
 - In [**Program.cs**](https://github.com/aerospike/aerospike-csharp-aggregation-x86/blob/master/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
 - Build and Start the application
