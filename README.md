@@ -4,8 +4,8 @@ Simple app written in C# VS 2013 to specifically showcase that both `AerospikeCl
 ## Build Aerospike C# Client for **x86 (32-bit)**
 
 - Download it from [here](http://www.aerospike.com/download/client/csharp/3.0.12/)
-- Exract the contents on your local machine
-- Open **AerospikeClient.sln** in Visual Studio 2013
+- Extract the contents on your local machine
+- Open **AerospikeClient/AerospikeClient.csproj** in Visual Studio 2013
 - Change the following settings via `Project` > `AerospikeClient Properties`
     + Configuration: **Active (Release)**
     + Platform: **Active (x86)** 
