@@ -122,7 +122,7 @@ namespace ASConsoleApp
                 stmt.SetNamespace("test");
                 stmt.SetSetName("testusers");
                 stmt.SetIndexName("tweetcountindex");
-                stmt.SetFilters(Filter.Range("tweetCount", min, max));
+                stmt.SetFilters(Filter.Range("tweetcount", min, max));
 
                 rs = client.QueryAggregate(null, stmt, "aggregationByRegion", "sum");
 
@@ -136,6 +136,11 @@ namespace ASConsoleApp
                     Console.WriteLine("Total Users in East: " + result["e"]);
                     Console.WriteLine("Total Users in West: " + result["w"]);
                 }
+            }
+            catch (AerospikeException e)
+            {
+                Console.WriteLine("AerospikeException - Message: " + e.Message);
+                Console.WriteLine("AerospikeException - StackTrace: " + e.StackTrace);
             }
             finally
             {
