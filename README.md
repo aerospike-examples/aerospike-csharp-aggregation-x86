@@ -27,7 +27,7 @@ Follow these steps to run this application and see [aggregation](/ASConsoleApp/u
 
 - Download, clone or fork this repo -- basicially get the code one way or another :)
 - Open **ASConsoleApp.sln** in VS 2013
-- Add reference to generated `AerospikeClient.dll` located in `<local-client-download-folder>\bin\x86\Release` folder via `Project` > `Add Reference...` (Be sure to first remove any existing refrences to `AerospikeClient.dll`)
+- Add reference to generated `AerospikeClient.dll` located in `<local-client-download-folder>\bin\x86\Release` folder via `Project` > `Add Reference...` (**NOTE:** Be sure to first remove any existing refrences to `AerospikeClient.dll`)
 - In [**Program.cs**](/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
 - `Build` and `Start` the application
 
