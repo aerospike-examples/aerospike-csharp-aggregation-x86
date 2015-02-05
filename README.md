@@ -4,6 +4,7 @@ Simple app written in C# VS 2013 to specifically showcase that both `AerospikeCl
 ## Build Aerospike C# Client for **x86 (32-bit)**
 
 - Download it from [here](http://www.aerospike.com/download/client/csharp/3.0.12/)
+- Exract the contents on your local machine
 - Open **AerospikeClient.sln** in Visual Studio 2013
 - Change the following settings via `Project` > `AerospikeClient Properties`
     + Configuration: **Active (Release)**
@@ -26,7 +27,7 @@ Follow these steps to run this application and see [aggregation](/ASConsoleApp/u
 
 - Download, clone or fork this repo -- basicially get the code one way or another :)
 - Open **ASConsoleApp.sln** in VS 2013
-- Add reference to generated `AerospikeClient.dll` located in `<local-client-download-folder>\bin\x86\Release` folder via `Project` > `Add Reference...`
+- Add reference to generated `AerospikeClient.dll` located in `<local-client-download-folder>\bin\x86\Release` folder via `Project` > `Add Reference...` (Be sure to first remove any existing refrences to `AerospikeClient.dll`)
 - In [**Program.cs**](/ASConsoleApp/Program.cs), update ***asServerIP*** and ***asServerPort*** such that it points to your instance running the Aerospike Server
 - `Build` and `Start` the application
 
